@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
     fclose(fp);
     exit(0);
   } else if (strcmp(argv[1], "search") == 0) {  /* Handle search */
-     f (argc != 3) {     /* TBD  */
+     if(argc != 3) {     /* TBD  */
        print_usage("Improper arguments for delete", argv[0]);
        exit(1);
      }
